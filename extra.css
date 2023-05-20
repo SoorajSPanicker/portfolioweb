@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    overflow: hidden;
+    background-color: #7449fe;
+    padding: 20px 10px;
+    position: sticky;
+    top: 0;
+}
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding:0 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 20px;
+    border-radius: 4px;
+}
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+} 
+.header-right {
+    float: right;
+}
+
+/* home */
+
+img {
+    float: right;
+    border: 1px dotted black;
+    margin: 0px 10% 15px 20px;
+    height: 280px;
+    width: 210px;
+    border-radius: 8px;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding: 50px 10%;
+}
+.htext{
+    margin-top: 190px;
+    font-size: x-large;
+    margin-bottom: 50%;
+}
+.htext h2 span{
+    color: rgb(249, 31, 31);
+}
+
+/* about */
+
+.row{
+    background-color: #7449fe;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 3% 0;
+}
+.col1{
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(249, 31, 31);
+}
+.col2 p{
+    font-size: larger;
+    color: blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container1{
+    padding: 10% 10%;
+}
+
+/* skills */
+
+.h{
+    text-align: center;
+    margin-top: 5%;
+    color: rgb(247, 58, 58);
+}
+.grid-container div b{
+    color: rgb(247, 58, 58);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px 200px;
+    gap: 15px;
+    margin-top: 100px;
+    margin-bottom: 140px;
+    row-gap: 30px;
+}
+.grid-container div{
+    background-color: #7449fe;
+    text-align: center;
+    padding: 20px 0;
+    font-size: larger;
+    border:1px solid;
+}
+
+/* project */
+
+#project{
+    padding: 20px 0;
+}
+.title{
+    text-align: center;
+    margin-top: 5%;
+    color: rgb(247, 58, 58);
+}
+.project-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    margin-top: 100px;
+    margin-bottom: 5%;
+}
+.project-list div{
+    background-color:#7449fe ;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition:background 0.5s,transform 0.5s;
+}
+.project-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.project-list div p{
+    font-size: 15px;
+}
+.project-list div a{
+    text-decoration: none;
+    color:yellow;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.project-list div:hover{
+    background: #ff004f;
+    transform: translateY(10px);
+}
+
+/* contact */
+
+.column-left{
+    flex-basis: 35%;
+
+}
+.column-right{
+    flex-basis: 60%;
+    
+}
+.column-left p{
+    margin-top: 30px;
+}
+.row2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.column-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.titlec{
+    color: rgb(247, 58, 58);
+}
+.sicons{
+    margin-top: 30px;
+}
+.sicons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#ababab;
+    display: inline-block;
+    transition: transform 0.5s;    
+}
+.sicons a:hover{
+    color: rgb(247, 58, 58);
+    transform: translateY(-5px);
+}
+
+/* responsive */
+
+@media (max-width: 600px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+     /* home */
+     .htext{
+        margin:0;
+        text-align:left;
+    }
+    img{
+        float: none;
+        width: 15rem;
+        height: 20rem;
+    }
+    .container{
+        padding:1rem 0;
+    }
+    .htext p {
+        font-size: 22px;
+    }
+    .htext h2{
+        font-size: 17px;
+    }
+    /* about */
+    .row{
+        padding: 1rem 0;
+        width: 80%;
+    }
+    .container1{
+        padding: 1rem 0;
+    }
+    .col1{
+        text-align: left;
+        margin:0 5rem;
+        font-size: xx-small;
+    }
+    .col2 p{
+        font-size: medium;
+    }
+    .b li{
+        font-size: 10px;
+    }
+    /* skills */
+    .h{
+        text-align: left;
+        padding: 0 6rem;
+    }
+    .grid-container{
+        grid-template-columns: 5rem 5rem 5rem;
+
+    }
+    .grid-container div{
+        font-size: medium;
+    }
+
+   /* project */
+
+    .title{
+    text-align: left;
+    padding: 0 4rem;
+    }
+    .project-list{
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .project-list div{
+        padding: 1rem;
+    }
+    .project-list div p{
+        font-size: 13px;
+    }
+     
+    /* contact */
+     .row2{
+        justify-content: left;
+     }
+     .column-left p{
+        margin-top: 15px;
+        line-height: 10px;
+     }
+     .sicons{
+        margin-top: 5px;
+     }
+}    
+
